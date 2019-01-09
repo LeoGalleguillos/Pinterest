@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "89e9d4daff9eefefeac05f36d853cb24",
+    "content-hash": "7afe61fc7acf76f45a3f0aa9085fb267",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -92,6 +92,97 @@
             "time": "2015-06-14T21:17:01+00:00"
         },
         {
+            "name": "leo-galleguillos/flash",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LeoGalleguillos/Flash.git",
+                "reference": "bafb34197d2d8354cf2df55004ea7a8996c34909"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LeoGalleguillos/Flash/zipball/bafb34197d2d8354cf2df55004ea7a8996c34909",
+                "reference": "bafb34197d2d8354cf2df55004ea7a8996c34909",
+                "shasum": ""
+            },
+            "require": {
+                "zendframework/zend-test": "^3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LeoGalleguillos\\Flash\\": "src/",
+                    "LeoGalleguillos\\FlashTest\\": "test/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2018-08-03T00:28:08+00:00"
+        },
+        {
+            "name": "leo-galleguillos/re-captcha",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LeoGalleguillos/ReCaptcha.git",
+                "reference": "38b9dc36637f68d2e7834ce3a15b984e0d61739f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LeoGalleguillos/ReCaptcha/zipball/38b9dc36637f68d2e7834ce3a15b984e0d61739f",
+                "reference": "38b9dc36637f68d2e7834ce3a15b984e0d61739f",
+                "shasum": ""
+            },
+            "require": {
+                "leo-galleguillos/string": "dev-master",
+                "zendframework/zend-test": "^3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LeoGalleguillos\\ReCaptcha\\": "src/",
+                    "LeoGalleguillos\\ReCaptchaTest\\": "test/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2018-10-02T22:16:28+00:00"
+        },
+        {
+            "name": "leo-galleguillos/string",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LeoGalleguillos/String.git",
+                "reference": "3c5e309bd8c2e2e81dd0d2f52e84d829f782f5b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LeoGalleguillos/String/zipball/3c5e309bd8c2e2e81dd0d2f52e84d829f782f5b4",
+                "reference": "3c5e309bd8c2e2e81dd0d2f52e84d829f782f5b4",
+                "shasum": ""
+            },
+            "require": {
+                "zendframework/zend-test": "^3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LeoGalleguillos\\String\\": "src/",
+                    "LeoGalleguillos\\StringTest\\": "test/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2019-01-06T09:28:21+00:00"
+        },
+        {
             "name": "leo-galleguillos/test",
             "version": "dev-master",
             "source": {
@@ -121,6 +212,40 @@
                 "MIT"
             ],
             "time": "2018-11-07T17:47:04+00:00"
+        },
+        {
+            "name": "leo-galleguillos/user",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LeoGalleguillos/User.git",
+                "reference": "c67186b4eda8a42227b7173cac47f7bdff045f6b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LeoGalleguillos/User/zipball/c67186b4eda8a42227b7173cac47f7bdff045f6b",
+                "reference": "c67186b4eda8a42227b7173cac47f7bdff045f6b",
+                "shasum": ""
+            },
+            "require": {
+                "leo-galleguillos/flash": "dev-master",
+                "leo-galleguillos/re-captcha": "dev-master",
+                "leo-galleguillos/string": "dev-master",
+                "zendframework/zend-db": "^2.9",
+                "zendframework/zend-test": "^3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LeoGalleguillos\\User\\": "src/",
+                    "LeoGalleguillos\\UserTest\\": "test/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2019-01-09T16:33:37+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -2689,7 +2814,11 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "leo-galleguillos/test": 20
+        "leo-galleguillos/flash": 20,
+        "leo-galleguillos/test": 20,
+        "leo-galleguillos/re-captcha": 20,
+        "leo-galleguillos/string": 20,
+        "leo-galleguillos/user": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
