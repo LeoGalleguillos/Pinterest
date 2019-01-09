@@ -1,0 +1,15 @@
+{
+    "name": "leo-galleguillos/pinterest",
+    "license": "MIT",
+    "require": {
+        "leo-galleguillos/test": "dev-master",
+        "zendframework/zend-db": "^2.9",
+        "zendframework/zend-test": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "LeoGalleguillos\\Pinterest\\": "src/",
+            "LeoGalleguillos\\PinterestTest\\": "test/"
+        }
+    }
+}
