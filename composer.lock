@@ -219,12 +219,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/LeoGalleguillos/User.git",
-                "reference": "c67186b4eda8a42227b7173cac47f7bdff045f6b"
+                "reference": "8bc58005efee1332560acea365fb1b21b4e85eff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LeoGalleguillos/User/zipball/c67186b4eda8a42227b7173cac47f7bdff045f6b",
-                "reference": "c67186b4eda8a42227b7173cac47f7bdff045f6b",
+                "url": "https://api.github.com/repos/LeoGalleguillos/User/zipball/8bc58005efee1332560acea365fb1b21b4e85eff",
+                "reference": "8bc58005efee1332560acea365fb1b21b4e85eff",
                 "shasum": ""
             },
             "require": {
@@ -245,7 +245,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2019-01-09T16:33:37+00:00"
+            "time": "2019-01-09T22:20:33+00:00"
         },
         {
             "name": "myclabs/deep-copy",
