@@ -24,6 +24,11 @@ class Module
     {
         return [
             'factories' => [
+                PinterestTable\User::class => function ($sm) {
+                    return new PinterestTable\User(
+                        $sm->get('pinterest')
+                    );
+                },
             ],
         ];
     }
