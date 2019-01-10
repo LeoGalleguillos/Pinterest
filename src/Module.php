@@ -28,6 +28,12 @@ class Module
                     return new PinterestFactory\App(
                     );
                 },
+                PinterestService\App\Apps::class => function ($sm) {
+                    return new PinterestService\App\Apps(
+                        $sm->get(PinterestFactory\App::class),
+                        $sm->get(PinterestTable\App::class)
+                    );
+                },
                 PinterestTable\App::class => function ($sm) {
                     return new PinterestTable\App(
                         $sm->get('pinterest')
