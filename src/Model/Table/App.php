@@ -25,7 +25,7 @@ class App
                  , `name`
               FROM `app`
              ORDER
-                BY `app_id` ASC
+                BY `name` ASC
                  ;
         ';
         foreach ($this->adapter->query($sql)->execute() as $array) {
