@@ -28,6 +28,10 @@ class Module
                     return new PinterestFactory\App(
                     );
                 },
+                PinterestFactory\AppUser::class => function ($sm) {
+                    return new PinterestFactory\AppUser(
+                    );
+                },
                 PinterestService\App\Apps::class => function ($sm) {
                     return new PinterestService\App\Apps(
                         $sm->get(PinterestFactory\App::class),
