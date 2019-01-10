@@ -29,7 +29,10 @@ class AppUser
                 BY `user_id` ASC
                  ;
         ';
-        foreach ($this->adapter->query($sql)->execute() as $array) {
+        $parameters = [
+            $appId,
+        ];
+        foreach ($this->adapter->query($sql)->execute($parameters) as $array) {
             yield($array);
         }
     }

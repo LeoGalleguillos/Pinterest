@@ -38,6 +38,12 @@ class Module
                         $sm->get(PinterestTable\App::class)
                     );
                 },
+                PinterestService\AppUser\AppUsers::class => function ($sm) {
+                    return new PinterestService\AppUser\AppUsers(
+                        $sm->get(PinterestFactory\AppUser::class),
+                        $sm->get(PinterestTable\AppUser::class)
+                    );
+                },
                 PinterestTable\App::class => function ($sm) {
                     return new PinterestTable\App(
                         $sm->get('pinterest')
