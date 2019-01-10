@@ -39,6 +39,11 @@ class Module
                         $sm->get('pinterest')
                     );
                 },
+                PinterestTable\AppUser::class => function ($sm) {
+                    return new PinterestTable\AppUser(
+                        $sm->get('pinterest')
+                    );
+                },
                 PinterestTable\User::class => function ($sm) {
                     return new PinterestTable\User(
                         $sm->get('pinterest')
