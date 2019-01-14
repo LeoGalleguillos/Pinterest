@@ -32,4 +32,20 @@ class App
             yield($array);
         }
     }
+
+    public function selectWhereAppId(int $appId): array
+    {
+        $sql = '
+            SELECT `app_id`
+                 , `app_secret`
+                 , `name`
+              FROM `app`
+             WHERE `app_id` = ?
+                 ;
+        ';
+        $parameters = [
+            $appId,
+        ];
+        return $this->adapter->query($sql)->execute($parameters)->current();
+    }
 }

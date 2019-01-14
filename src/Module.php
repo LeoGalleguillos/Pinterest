@@ -26,6 +26,7 @@ class Module
             'factories' => [
                 PinterestFactory\App::class => function ($sm) {
                     return new PinterestFactory\App(
+                        $sm->get(PinterestTable\App::class)
                     );
                 },
                 PinterestFactory\AppUser::class => function ($sm) {

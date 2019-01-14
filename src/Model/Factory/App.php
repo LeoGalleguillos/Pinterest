@@ -2,10 +2,24 @@
 namespace LeoGalleguillos\Pinterest\Model\Factory;
 
 use LeoGalleguillos\Pinterest\Model\Entity as PinterestEntity;
+use LeoGalleguillos\Pinterest\Model\Table as PinterestTable;
 
 class App
 {
-    public function buildFromArray(array $array) : PinterestEntity\App
+    public function __construct(
+        PinterestTable\App $appTable
+    ) {
+        $this->appTable = $appTable;
+    }
+
+    public function buildFromAppId(int $appId): PinterestEntity\App
+    {
+        return $this->buildFromArray(
+            $this->appTable->selectWhereAppId($appId)
+        );
+    }
+
+    public function buildFromArray(array $array): PinterestEntity\App
     {
         $appEntity = new PinterestEntity\App();
 
