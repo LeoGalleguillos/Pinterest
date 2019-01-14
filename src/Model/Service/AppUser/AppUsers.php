@@ -2,6 +2,7 @@
 namespace LeoGalleguillos\Pinterest\Model\Service\AppUser;
 
 use Generator;
+use LeoGalleguillos\Pinterest\Model\Entity as PinterestEntity;
 use LeoGalleguillos\Pinterest\Model\Factory as PinterestFactory;
 use LeoGalleguillos\Pinterest\Model\Table as PinterestTable;
 
